@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #ffffff;
+    color: #111111;
+    transition:
+        background-color 300ms ease,
+        color 300ms ease;
+}
+
+html.dark body {
+    background: #0a0a0a;
+    color: #ffffff;
+}
+
+::selection {
+    background: #111111;
+    color: #ffffff;
+}
+
+html.dark ::selection {
+    background: #ffffff;
+    color: #111111;
+}
